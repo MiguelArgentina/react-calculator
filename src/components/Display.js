@@ -4,18 +4,17 @@ const Display = (props) => {
   const { result } = props;
   return (
     <div>
-        { result }
+      { result }
     </div>
-    );
-}
-
-Display.propTypes = {
-  result: PropTypes.string;
-}
-
-Display.defaultProps = {
-    result: '0',
+  );
 };
 
+Display.propTypes = {
+  result: PropTypes.string,
+};
+
+Display.defaultProps = {
+  result: '0',
+};
 
 export default Display;
