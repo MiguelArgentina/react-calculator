@@ -10,7 +10,7 @@ Visit [Math-magicians calculator](https://react-tucu-calculator.herokuapp.com/).
 
 ## Features
 
-For the time being, only the basic structure of a react app was deployed to Heroku to make sure everything works fine.
+Until now, the calculator displays all its objects (Display, ButtonPanel, Buttons) without styling.
 
 ## Getting started
 
