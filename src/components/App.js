@@ -1,4 +1,6 @@
-import React, {Fragment} from 'react';
+import React from 'react';
+import ButtonPanel from './ButtonPanel';
+import Display from './Display';
 
 function App() {
   return (
@@ -9,8 +11,8 @@ function App() {
         </p>
       </header>
       <>
-        < Display />
-        < ButtonPanel />
+        <Display />
+        <ButtonPanel />
       </>
     </div>
   );
