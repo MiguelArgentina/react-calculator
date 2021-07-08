@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Math-magicians calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+This project intends to give me my first steps into developing apps with react.
 
-In the project directory, you can run:
+## Live link
 
-### `npm start`
+Visit [Math-magicians calculator](https://react-tucu-calculator.herokuapp.com/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For the time being, only the basic structure of a react app was deployed to Heroku to make sure everything works fine.
 
-### `npm test`
+## Getting started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- To get started with the app, clone this project by running `git clone https://github.com/MiguelArgentina/react-calculator`
+- cd into the directory and run `npm install` to install the needed packages and dependencies
+- A development tool is included in the npm script. Run `npm start` to fire up a local server with live reloading.
+- If not already redirected, visit [http://localhost:3000/](http://localhost:3000/) in your browser to use the calculator.
+- To terminate the server, enter `Ctrl + C` in your terminal
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Testing
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Running `npm test` launches the test runner in the interactive watch mode.\
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Building the app
 
-### `npm run eject`
+- Running `npm run build` builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- React
+- React-DOM
+- React-Create-App
+- Heroku Buildpack for create-react-app
+- npm
+- Javascript ES6+Jest
+- CSS
+- Heroku
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Author
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 &nbsp; **Miguel Ricardo Gomez**
 
-## Learn More
+- GitHub: [@MiguelArgentina](https://github.com/MiguelArgentina)
+- Twitter: [@Qete_arg](https://twitter.com/Qete_arg)
+- LinkedIn: [Miguel Ricardo Gomez](https://www.linkedin.com/in/miguelricardogomez/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
+<br>
+<br>
+<p align="center">
+  <a href="https://github.com/MiguelArgentina/react-calculator/issues">
+  <img src="https://img.shields.io/github/issues-raw/MiguelArgentina/react-calculator?style=for-the-badge"
+       alt="Issues"></a>
+   <a href="https://github.com/MiguelArgentina/react-calculator/pulls">
+  <img src="https://img.shields.io/github/issues-pr/MiguelArgentina/react-calculator?style=for-the-badge"
+       alt="Pull Requests"></a>
+   <a href="https://github.com/MiguelArgentina/react-calculator/blob/main/LICENSE">
+  <img src="https://img.shields.io/github/license/MiguelArgentina/react-calculator?style=for-the-badge"
+       alt="License"></a>
+</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Show your support
 
-### Code Splitting
+Give a ⭐️ &nbsp; if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
