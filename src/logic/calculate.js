@@ -1,33 +1,30 @@
-import {
-  operate
-} from "./operate"
+import operate from './operate';
 
-export const calculate = (calculatorData, btnName) => {
-
+const calculate = (calculatorData, btnName) => {
   const {
     total,
     next,
-    operation
+    operation,
   } = calculatorData;
 
   if (
-    btnName == '.' ||
-    Array.from(Array(10).keys()).includes(Number(btnName))
+    btnName === '.'
+    || Array.from(Array(10).keys()).includes(Number(btnName))
   ) {
     return {
       total,
       next: next + btnName,
-      operation
-    }
+      operation,
+    };
   }
 
   switch (btnName) {
     case 'AC':
       return {
         total: '0',
-          next: null,
-          operation: null
-      }
+        next: null,
+        operation: null,
+      };
     case '+':
     case '-':
     case 'x':
@@ -36,34 +33,40 @@ export const calculate = (calculatorData, btnName) => {
         return {
           total: operate(Number(total), Number(next), operation),
           next: String(total),
-          operation: btnName
-        }
-      } else {
-          return {
-            total,
-            next,
-            operation: btnName
-          }
+          operation: btnName,
+        };
       }
+      return {
+        total,
+        next,
+        operation: btnName,
+      };
+
     case '=':
       return {
         total: operate(Number(total), Number(next), operation),
         next: String(total),
-        operation: null
-      }
+        operation: null,
+      };
     case '%':
       return {
         total: operate(Number(total), Number(next), btnName),
         next: String(total),
-        operation: null
-      }
+        operation: null,
+      };
     case '+/-':
       return {
         total: operate(Number(total), Number(next), btnName),
         next: String(total),
-        operation: operation
-      }
+        operation,
+      };
     default:
-      break;
+      return {
+        total,
+        next,
+        operation,
+      };
   }
-}
+};
+
+export default calculate;

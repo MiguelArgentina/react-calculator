@@ -1,7 +1,6 @@
 import Big from 'big';
 
-export const operate = (numberOne, numberTwo, operation) => {
-
+const operate = (numberOne, numberTwo, operation) => {
   let bigNumuberOne;
   let bigNumberTwo;
   if (numberOne) {
@@ -13,22 +12,23 @@ export const operate = (numberOne, numberTwo, operation) => {
   try {
     switch (operation) {
       case '+/-':
-        return bigNumuberOne.times(-1)
+        return bigNumuberOne.times(-1);
       case '+':
-        return bigNumuberOne.plus(bigNumberTwo)
+        return bigNumuberOne.plus(bigNumberTwo);
       case '-':
-        return bigNumuberOne.minus(bigNumberTwo)
+        return bigNumuberOne.minus(bigNumberTwo);
       case 'X':
-        return bigNumuberOne.times(bigNumberTwo)
+        return bigNumuberOne.times(bigNumberTwo);
       case '÷':
-        return bigNumuberOne.div(bigNumberTwo)
+        return bigNumuberOne.div(bigNumberTwo);
       case '%':
-        return bigNumuberOne.div(100)
+        return bigNumuberOne.div(100);
       default:
         return '0';
     }
   } catch (error) {
-    return 'Error'
+    return 'Error';
   }
+};
 
-}
+export default operate;
