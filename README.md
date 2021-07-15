@@ -10,7 +10,7 @@ Visit [Math-magicians calculator](https://react-tucu-calculator.herokuapp.com/).
 
 ## Features
 
-Until now, the calculator displays all its objects (Display, ButtonPanel, Buttons) without styling.
+Until now, the calculator displays all its objects (Display, ButtonPanel, Buttons) without styling. Also, the logic for making calculations has been added.
 
 ## Getting started
 
