@@ -7,28 +7,45 @@ const calculate = (calculatorData, btnName) => {
     operation,
   } = calculatorData;
 
-  if (
-    btnName === '.'
-    || Array.from(Array(10).keys()).includes(Number(btnName))
-  ) {
+  if (Array.from(Array(10).keys()).includes(Number(btnName))) {
+    if (next === '0' || next === 'Error') {
+      return {
+        total: total || '0',
+        next: btnName,
+        operation,
+      };
+    }
     return {
-      total,
-      next: next + btnName,
+      total: total || '0',
+      next: next ? next + btnName : btnName,
       operation,
     };
   }
 
   switch (btnName) {
+    case '.':
+      if (next.includes('.')) {
+        return {
+          total,
+          next,
+          operation,
+        };
+      }
+      return {
+        total: total || '0',
+        next: next ? next + btnName : btnName,
+        operation,
+      };
     case 'AC':
       return {
-        total: '0',
+        total: null,
         next: null,
         operation: null,
       };
     case '+':
     case '-':
-    case 'x':
-    case '/':
+    case 'X':
+    case '÷':
       if (operation) {
         return {
           total: operate(Number(total), Number(next), operation),
@@ -37,27 +54,27 @@ const calculate = (calculatorData, btnName) => {
         };
       }
       return {
-        total,
-        next,
+        total: String(next),
+        next: null,
         operation: btnName,
       };
 
     case '=':
       return {
         total: operate(Number(total), Number(next), operation),
-        next: String(total),
+        next: operate(Number(total), Number(next), operation),
         operation: null,
       };
     case '%':
       return {
-        total: operate(Number(total), Number(next), btnName),
-        next: String(total),
-        operation: null,
+        total,
+        next: operate(Number(next), Number(next), btnName),
+        operation,
       };
     case '+/-':
       return {
-        total: operate(Number(total), Number(next), btnName),
-        next: String(total),
+        total,
+        next: operate(Number(next), Number(next), btnName),
         operation,
       };
     default:
