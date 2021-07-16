@@ -8,7 +8,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       total: null,
-      next: null,
+      next: '0',
       operation: null,
     };
 
@@ -20,16 +20,16 @@ class App extends React.Component {
   render() {
     const { next, total, operation } = this.state;
     return (
-      <div className="App">
+      <div className="App col-12 col-md-4">
         <header className="App-header">
-          <p>
+          <p className="text-center font-weight-bold text-primary pt-2">
             Math-magicians calculator
           </p>
         </header>
-        <>
+        <div className="">
           <Display operation={operation} result={next || total} />
           <ButtonPanel clickHandler={this.handleClick} />
-        </>
+        </div>
       </div>
     );
   }
