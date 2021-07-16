@@ -11,6 +11,7 @@ const operate = (numberOne, numberTwo, operation) => {
   if (numberTwo) {
     bigNumberTwo = new Big(numberTwo);
   }
+
   try {
     switch (operation) {
       case '=':
@@ -24,6 +25,9 @@ const operate = (numberOne, numberTwo, operation) => {
       case 'X':
         return String(bigNumberOne.times(bigNumberTwo));
       case '÷':
+        if (numberTwo === 0) {
+          return 'Cannot divide by 0';
+        }
         return String(bigNumberOne.div(bigNumberTwo));
       case '%':
         return String(bigNumberOne.div(100));
