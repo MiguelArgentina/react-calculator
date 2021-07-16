@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Display = (props) => {
   const { result } = props;
   return (
-    <div>
+    <div className="border border-info bg-warning text-primary text-right px-1">
       { result }
     </div>
   );
