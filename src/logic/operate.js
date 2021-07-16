@@ -13,6 +13,8 @@ const operate = (numberOne, numberTwo, operation) => {
   }
   try {
     switch (operation) {
+      case '=':
+        return String(bigNumberOne.times(1));
       case '+/-':
         return String(bigNumberOne.times(-1));
       case '+':

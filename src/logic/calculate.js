@@ -8,6 +8,13 @@ const calculate = (calculatorData, btnName) => {
   } = calculatorData;
 
   if (Array.from(Array(10).keys()).includes(Number(btnName))) {
+    if (operation === '=') {
+      return {
+        total: total || '0',
+        next: btnName,
+        operation: null,
+      };
+    }
     if (next === '0' || next === 'Error') {
       return {
         total: total || '0',
@@ -49,7 +56,7 @@ const calculate = (calculatorData, btnName) => {
       if (operation) {
         return {
           total: operate(Number(total), Number(next), operation),
-          next: String(total),
+          next: '0',
           operation: btnName,
         };
       }
@@ -63,7 +70,7 @@ const calculate = (calculatorData, btnName) => {
       return {
         total: operate(Number(total), Number(next), operation),
         next: operate(Number(total), Number(next), operation),
-        operation: null,
+        operation: '=',
       };
     case '%':
       return {
