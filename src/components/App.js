@@ -3,6 +3,9 @@ import calculate from '../logic/calculate';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 
+import '../resets.css';
+import '../styles.css';
+
 const App = () => {
   const calcData = {
     total: null,
@@ -15,13 +18,9 @@ const App = () => {
 
   const { next, total, operation } = data;
   return (
-    <div className="App col-12 col-md-4">
-      <header className="App-header">
-        <p className="text-center font-weight-bold text-primary pt-2">
-          Math-magicians calculator
-        </p>
-      </header>
-      <div className="">
+    <div className="App">
+      <header className="App-header" />
+      <div className="calc-wrapper">
         <Display operation={operation} result={next || total} />
         <ButtonPanel clickHandler={handleClick} />
       </div>
