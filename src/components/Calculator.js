@@ -13,9 +13,12 @@ const Calculator = () => {
   const handleClick = (btnName) => setData((data) => calculate(data, btnName));
   const { next, total, operation } = data;
   return (
-    <div className="calc-wrapper">
-      <Display operation={operation} result={next || total} />
-      <ButtonPanel clickHandler={handleClick} />
+    <div className="mt-4 d-flex justify-content-between">
+      <div className="calc-text">Let´s do some math!</div>
+      <div className="calc-wrapper">
+        <Display operation={operation} result={next || total} />
+        <ButtonPanel clickHandler={handleClick} />
+      </div>
     </div>
   );
 };

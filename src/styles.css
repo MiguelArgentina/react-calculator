@@ -1,6 +1,8 @@
 
 body {
   background-color: #fdfdfd(194, 191, 191);
+  background-image: url("./assets/images/background.jpg");
+  background-size: cover;
 }
 
 .App {
@@ -12,6 +14,7 @@ body {
 
 .calc-wrapper {
   background-color: #ddd;
+  width: 700px;
 }
 
 .display {
@@ -58,8 +61,53 @@ body {
   flex-grow: 2;
 }
 
+.App-wrapper {
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 2rem;
+}
+
+.main-title {
+  font-size: 4rem;
+  margin-top: 2%;
+}
+
+.links-container {
+  font-size: 1.5rem;
+  margin-top: 2%;
+  text-decoration: underline;
+}
+
+.home-title {
+ font-size: 2rem;
+}
+
+.home-para {
+  font-size: 1.4rem;
+  background-color: rgba(199, 198, 197, .6);
+}
+
+.quote-para {
+  margin-top: 10%;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 6%;
+  font-size: 2.3rem;
+}
+
+.back-home-link {
+  margin-top: 2rem;
+  margin-left: 6%;
+  font-size: 1.3rem;
+  text-decoration: underline;
+}
+
+.calc-text {
+  font-size: 2rem;
+}
+
 @media (max-width: 768px) {
-  .App {
+  .calc-wrapper {
     width: 300px;
   }
   .btn-oth,

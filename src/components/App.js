@@ -13,9 +13,9 @@ import '../styles.css';
 
 const App = () => (
   <Router>
-    <div>
+    <div className="App-wrapper">
       <NavBar />
-      <div className="App">
+      <div className="">
         <header className="App-header" />
         <Switch>
           <Route exact path="/">
