@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Math-magicians calculator
 
 ## Objective
@@ -7,6 +9,12 @@ This project intends to give me my first steps into developing apps with react.
 ## Live link
 
 Visit [Math-magicians calculator](https://react-tucu-calculator.herokuapp.com/).
+
+## Screenshots
+
+![homepage screenshot](home.png)
+![calculator screenshot](calculator.png)
+![quote screenshot](quote.png)
 
 ## Features
 
