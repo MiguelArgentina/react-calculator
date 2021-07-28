@@ -1,6 +1,6 @@
 
 body {
-  background-color: #fdfdfd(194, 191, 191);
+  background-color: #fdfdfd;
   background-image: url("./assets/images/background.jpg");
   background-size: cover;
 }
@@ -39,7 +39,6 @@ body {
   justify-content: space-between;
   margin: 0.1rem;
   text-align: center;
-  border: none;
   background-color: #eee;
   border: 1px solid #eee;
   line-height: 100px;
@@ -79,12 +78,12 @@ body {
 }
 
 .home-title {
- font-size: 2rem;
+  font-size: 2rem;
 }
 
 .home-para {
   font-size: 1.4rem;
-  background-color: rgba(199, 198, 197, .6);
+  background-color: rgba(199, 198, 197, 0.6);
 }
 
 .quote-para {
@@ -110,6 +109,7 @@ body {
   .calc-wrapper {
     width: 300px;
   }
+
   .btn-oth,
   .btn-ope,
   .display {
