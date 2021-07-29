@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests snapshots of components the Button com\`ponent renders correctly: 1`] = `
+<button
+  className="test-color-css-class test-width-css-class"
+  onClick={[Function]}
+  type="button"
+>
+  Test button
+</button>
+`;
+
+exports[`Tests snapshots of components the Button component renders correctly: 1`] = `
+<button
+  className="test-color-css-class test-width-css-class"
+  onClick={[Function]}
+  type="button"
+>
+  Test button
+</button>
+`;
+
+exports[`Tests snapshots of components the Calculator component renders correctly: 1`] = `
+<div
+  className="mt-4d-block d-md-flex justify-content-between"
+>
+  <div
+    className="calc-text my-3"
+  >
+    Let´s do some math!
+  </div>
+  <div
+    className="calc-wrapper"
+  >
+    <div
+      className="display w-100"
+    >
+      0
+    </div>
+    <div
+      className="button-panel-wrapper"
+    >
+      <div
+        className="btn-row group-1"
+      >
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          AC
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          +/-
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          %
+        </button>
+        <button
+          className="btn-ope not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          ÷
+        </button>
+      </div>
+      <div
+        className="btn-row group-2"
+      >
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="btn-ope not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          x
+        </button>
+      </div>
+      <div
+        className="btn-row group-3"
+      >
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="btn-ope not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          -
+        </button>
+      </div>
+      <div
+        className="btn-row group-4"
+      >
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="btn-ope not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          +
+        </button>
+      </div>
+      <div
+        className="btn-row group-5"
+      >
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          0
+        </button>
+        <button
+          className="btn-oth not-btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          .
+        </button>
+        <button
+          className="btn-oth btn-eq"
+          onClick={[Function]}
+          type="button"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tests snapshots of components the Display component renders correctly: 1`] = `
+<div
+  className="display w-100"
+>
+  Test display text
+</div>
+`;
+
+exports[`Tests snapshots of components the Home component renders correctly: 1`] = `
+<div>
+  <h1
+    className="text-start ms-4 mt-4 home-title"
+  >
+     Welcome to our page!
+  </h1>
+  <p
+    className="text-start ms-4 mt-4 home-para"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum. Ipsu
+  </p>
+  <p
+    className="text-start ms-4 mt-4 home-para"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui o!cia deserunt mollit anim id est laborum. Ipsu
+  </p>
+</div>
+`;
+
+exports[`Tests snapshots of components the NotFound component renders correctly: 1`] = `
+Array [
+  <div
+    className="text-start home-para quote-para"
+  >
+    The page you are looking for does not exist.
+  </div>,
+  <p>
+    <a
+      className="back-home-link"
+      href="/"
+      onClick={[Function]}
+    >
+      Back to home
+    </a>
+  </p>,
+]
+`;
+
+exports[`Tests snapshots of components the NotFound components renders correctly: 1`] = `
+Array [
+  <div
+    className="text-start home-para quote-para"
+  >
+    The page you are looking for does not exist.
+  </div>,
+  <p>
+    <a
+      className="back-home-link"
+      href="/"
+      onClick={[Function]}
+    >
+      Back to home
+    </a>
+  </p>,
+]
+`;
+
+exports[`Tests snapshots of components the Quote component renders correctly: 1`] = `
+<div>
+  <p
+    className="text-start home-para quote-para"
+  >
+    Loading...
+  </p>
+</div>
+`;

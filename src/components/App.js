@@ -1,38 +1,39 @@
-import React from 'react';
-import calculate from '../logic/calculate';
-import ButtonPanel from './ButtonPanel';
-import Display from './Display';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import NavBar from './NavBar';
+import Calculator from './Calculator';
+import Quote from './Quote';
+import Home from './Home';
+import NotFound from './NotFound';
+import '../resets.css';
+import '../styles.css';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: '0',
-      operation: null,
-    };
-
-    this.handleClick = (btnName) => {
-      this.setState((prevState) => calculate(prevState, btnName));
-    };
-  }
-
-  render() {
-    const { next, total, operation } = this.state;
-    return (
-      <div className="App col-12 col-md-4">
-        <header className="App-header">
-          <p className="text-center font-weight-bold text-primary pt-2">
-            Math-magicians calculator
-          </p>
-        </header>
-        <div className="">
-          <Display operation={operation} result={next || total} />
-          <ButtonPanel clickHandler={this.handleClick} />
-        </div>
+const App = () => (
+  <Router>
+    <div className="App-wrapper">
+      <NavBar />
+      <div className="">
+        <header className="App-header" />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/calculator">
+            <Calculator />
+          </Route>
+          <Route path="/quote">
+            <Quote />
+          </Route>
+          <Route path="*">
+            <NotFound />
+          </Route>
+        </Switch>
       </div>
-    );
-  }
-}
+    </div>
+  </Router>
+);
 
 export default App;

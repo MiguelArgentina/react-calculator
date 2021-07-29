@@ -22,7 +22,7 @@ const operate = (numberOne, numberTwo, operation) => {
         return String(bigNumberOne.plus(bigNumberTwo));
       case '-':
         return String(bigNumberOne.minus(bigNumberTwo));
-      case 'X':
+      case 'x':
         return String(bigNumberOne.times(bigNumberTwo));
       case '÷':
         if (numberTwo === 0) {

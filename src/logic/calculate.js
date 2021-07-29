@@ -51,7 +51,7 @@ const calculate = (calculatorData, btnName) => {
       };
     case '+':
     case '-':
-    case 'X':
+    case 'x':
     case '÷':
       if (operation) {
         return {

@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Math-magicians calculator
 
 ## Objective
@@ -8,9 +10,19 @@ This project intends to give me my first steps into developing apps with react.
 
 Visit [Math-magicians calculator](https://react-tucu-calculator.herokuapp.com/).
 
+## Screenshots
+
+![homepage screenshot](home.png)
+![calculator screenshot](calculator.png)
+![quote screenshot](quote.png)
+
 ## Features
 
 Until now, the calculator displays all its objects (Display, ButtonPanel, Buttons) without styling, and now the  logic has been connected to the objects so they can handle events and interact with the user.
+Also, the App class component has been transformed into a funcional component with a useState hook.
+Additionally, the app takes care of bad routes requests with a "Not Found" webpage for the user and the quote is randomly served by an API request.
+Tests were added on order to maje sure app will run correctly.
+
 
 ## Getting started
 
